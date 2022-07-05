@@ -2,4 +2,4 @@
 /ts-maps/.cache
 /ts-maps/dist
 /ts-maps/node_modules
-
+/ts-react/node_modules
