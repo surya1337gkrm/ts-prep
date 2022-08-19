@@ -1,8 +1,10 @@
-import { useEffect, useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { ResizableBox, ResizableBoxProps } from 'react-resizable';
 import './resizable.css';
 interface ResizableProps {
   direction: 'horizantal' | 'vertical';
+  //for react18
+  children?: React.ReactNode;
 }
 
 const Resizable: React.FC<ResizableProps> = ({ direction, children }) => {

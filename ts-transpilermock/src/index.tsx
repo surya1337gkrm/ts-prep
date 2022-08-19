@@ -1,14 +1,19 @@
 import 'bulmaswatch/superhero/bulmaswatch.min.css';
+import '@fortawesome/fontawesome-free/css/all.min.css';
 import ReactDOM from 'react-dom';
-import TextEditor from './components/textEditor';
-// import CodeCell from './components/codeCell';
+
+import CellList from './components/cellList';
+
+import { Provider } from 'react-redux';
+import { store } from './state';
 
 const App = () => {
   return (
-    <>
-      {/* <CodeCell /> */}
-      <TextEditor />
-    </>
+    <Provider store={store}>
+      <div>
+        <CellList />
+      </div>
+    </Provider>
   );
 };
 ReactDOM.render(<App />, document.querySelector('#root'));

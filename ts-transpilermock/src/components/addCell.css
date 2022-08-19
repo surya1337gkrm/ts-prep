@@ -1,0 +1,33 @@
+.addCell {
+  position: relative;
+  opacity: 0;
+  transition: opacity 0.3s ease-in 0.1s;
+  margin: 10px 0;
+}
+
+.addCell:hover {
+  opacity: 1;
+}
+
+.addCell.forceVisible {
+  opacity: 1;
+}
+
+.addCell .horizantalLine {
+  position: absolute;
+  top: 50%;
+  left: 5%;
+  right: 50%;
+  bottom: 50%;
+  border: 1px solid grey;
+  width: 90%;
+  z-index: -1;
+}
+.addCell .addButtons {
+  display: flex;
+  justify-content: center;
+}
+
+.addCell .addButtons button {
+  margin: 0px 40px;
+}

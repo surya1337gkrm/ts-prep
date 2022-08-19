@@ -1,0 +1,10 @@
+.cellListItem {
+  position: relative;
+  /* margin: 40px 10px; */
+}
+
+.actionBarWrapper {
+  height: 30px;
+  width: 100%;
+  background-color: #37414b;
+}
